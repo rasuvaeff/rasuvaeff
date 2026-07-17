@@ -4,7 +4,7 @@
 
 <br>
 
-![Experience](https://img.shields.io/badge/7%2B%20Years-Experience-777BB4?style=for-the-badge)
+![Experience](https://img.shields.io/badge/15%2B%20Years-Experience-777BB4?style=for-the-badge)
 ![Open To Work](https://img.shields.io/badge/Open%20To%20Work-4c1?style=for-the-badge)
 ![Made with PHP](https://img.shields.io/badge/Made%20with-PHP%208.5-777BB4?style=for-the-badge&logo=php&logoColor=white)
 [![Packagist](https://img.shields.io/badge/Packagist-49%20packages-F28D1A?style=for-the-badge&logo=packagist&logoColor=white)](https://packagist.org/packages/rasuvaeff/)
@@ -17,9 +17,9 @@
 
 ### 👨‍💻 About
 
-Backend engineer with 7+ years of commercial PHP. I design and build high-load services and APIs — and I publish the reusable parts as open source.
+Backend engineer with 15+ years of commercial PHP. I design and build high-load services and APIs — and I publish the reusable parts as open source.
 
-- **5+ years in ad-tech**: an advertising network with RTB (Real-Time Bidding) integrations, buying and selling traffic — MySQL for operational data, ClickHouse for impression analytics, Redis/Memcached for caching.
+- **10 years in ad-tech**: advertising networks with RTB (Real-Time Bidding) integrations, buying and selling traffic — MySQL for operational data, ClickHouse for impression analytics, Redis/Memcached for caching.
 - **Now**: product development on Yii3 / PHP 8.5 with Clean Architecture (Domain / Application / Infrastructure / Endpoint, boundaries enforced statically by Deptrac), plus support and refactoring of large Yii2 legacy systems.
 - **LLM in production**: the application acts as an MCP server — assistants connect over Model Context Protocol and call domain tools via tool-calling, guarded by per-user RBAC and an audit log.
 - I care about the things that are invisible until they break: retries, idempotency, exactly-once delivery, backpressure, mutation-tested code.
