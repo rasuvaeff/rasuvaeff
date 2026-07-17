@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3200&pause=900&color=777BB4&center=true&vCenter=true&width=680&lines=Backend+Engineer+%E2%80%94+PHP+%2F+Yii3;High-load+services+and+ad-tech+(RTB);Clean+Architecture+%C2%B7+DDD+%C2%B7+CQRS;49+open-source+packages+on+Packagist;LLM+integration+via+MCP" alt="Backend Engineer — PHP / Yii3" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+  <img src="assets/banner-light.svg" alt="Victor Razuvaev — Backend Engineer, PHP / Yii3. High-load services, ad-tech (RTB), distributed systems, Clean Architecture." width="100%">
+</picture>
 
 <br>
 
