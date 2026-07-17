@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 170" width="900" height="170" role="img" aria-label="Victor Razuvaev — Backend Engineer, PHP / Yii3. High-load services, ad-tech (RTB), distributed systems, Clean Architecture.">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8892BF"/>
+      <stop offset="100%" stop-color="#4F5B93"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="8" width="5" height="154" rx="2.5" fill="url(#accent)"/>
+
+  <text x="34" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="36" font-weight="700" fill="#7E6BB8" letter-spacing="-0.5">Victor Razuvaev</text>
+
+  <text x="34" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#6C7793">Backend Engineer · PHP / Yii3</text>
+
+  <text x="34" y="119" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#757D8A">High-load services · ad-tech (RTB) · distributed systems · Clean Architecture</text>
+
+  <line x1="34" y1="138" x2="866" y2="138" stroke="#7A8296" stroke-width="1" stroke-opacity="0.3"/>
+
+  <text x="34" y="158" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#757D8A">composer require rasuvaeff/…</text>
+
+  <text x="866" y="158" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#757D8A">15+ years in PHP</text>
+</svg>

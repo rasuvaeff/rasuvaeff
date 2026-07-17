@@ -1,19 +1,12 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img src="assets/banner-light.svg" alt="Victor Razuvaev — Backend Engineer, PHP / Yii3. High-load services, ad-tech (RTB), distributed systems, Clean Architecture." width="100%">
-</picture>
+<img src="assets/banner.svg" alt="Victor Razuvaev — Backend Engineer, PHP / Yii3. High-load services, ad-tech (RTB), distributed systems, Clean Architecture." width="100%">
 
 <br>
 
-![Experience](https://img.shields.io/badge/15%2B%20Years-Experience-777BB4?style=for-the-badge)
 ![Open To Work](https://img.shields.io/badge/Open%20To%20Work-4c1?style=for-the-badge)
-![Made with PHP](https://img.shields.io/badge/Made%20with-PHP%208.5-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.3%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
 [![Packagist](https://img.shields.io/badge/Packagist-49%20packages-F28D1A?style=for-the-badge&logo=packagist&logoColor=white)](https://packagist.org/packages/rasuvaeff/)
-
-![Profile views](https://komarev.com/ghpvc/?username=rasuvaeff&style=flat-square&color=777BB4&label=profile+views)
 
 </div>
 
@@ -67,8 +60,8 @@ Backend engineer with 15+ years of commercial PHP. I design and build high-load 
 ![Psalm](https://img.shields.io/badge/Psalm-2D2D2D?style=for-the-badge)
 ![PHPUnit](https://img.shields.io/badge/PHPUnit-3C9CD7?style=for-the-badge)
 ![Codeception](https://img.shields.io/badge/Codeception-4D4D4D?style=for-the-badge)
-![Testo](https://img.shields.io/badge/Testo-testing%20framework-00A3A3?style=for-the-badge)
-![Infection](https://img.shields.io/badge/Infection-mutation%20testing-8A2BE2?style=for-the-badge)
+![Testo](https://img.shields.io/badge/Testo-00A3A3?style=for-the-badge)
+![Infection](https://img.shields.io/badge/Infection-8A2BE2?style=for-the-badge)
 ![Rector](https://img.shields.io/badge/Rector-6E4C13?style=for-the-badge)
 ![Deptrac](https://img.shields.io/badge/Deptrac-3B5998?style=for-the-badge)
 
@@ -78,14 +71,14 @@ Backend engineer with 15+ years of commercial PHP. I design and build high-load 
 
 Reusable PHP 8.3+ libraries with hardened CI/CD, SemVer, backward-compatibility checks, and tests on [Testo](https://php-testo.github.io) with mutation testing (MSI 85–100%).
 
-| Package | What it does | |
-|---|---|---|
-| [**bulkhead**](https://github.com/rasuvaeff/bulkhead) | Cross-process concurrency limiter for PHP-FPM — keeps one slow upstream from eating every worker. Atomic slot acquisition via Redis Lua scripts, APCu spinlocks; tested against real forked processes (`pcntl`). Needs nothing but PHP and Redis | [![v](https://img.shields.io/packagist/v/rasuvaeff/bulkhead?style=flat-square&label=&color=4c1)](https://packagist.org/packages/rasuvaeff/bulkhead) |
-| [**rector-datetime-immutable**](https://github.com/rasuvaeff/rector-datetime-immutable) | Rector rules migrating mutable `DateTime` → `DateTimeImmutable` — and auto-fixing the lost mutations the migration silently creates, where `$date->modify('+1 day');` throws the new instance away. Static analysers report those; this fixes them in bulk | [![v](https://img.shields.io/packagist/v/rasuvaeff/rector-datetime-immutable?style=flat-square&label=&color=4c1)](https://packagist.org/packages/rasuvaeff/rector-datetime-immutable) |
-| [**property-testing**](https://github.com/rasuvaeff/property-testing) | Property-based testing with **integrated shrinking** (Hedgehog model) and stateful / model-based testing — the two things PHP's PBT libraries don't do. Generates inputs, finds a counterexample, shrinks it to the minimal one. A Testo plugin | [![v](https://img.shields.io/packagist/v/rasuvaeff/property-testing?style=flat-square&label=&color=4c1)](https://packagist.org/packages/rasuvaeff/property-testing) |
-| [**yii3-outbox**](https://github.com/rasuvaeff/yii3-outbox) | Transactional outbox — events committed in the same transaction as the data, then relayed. No lost messages on crash, no dual-write. Yii3 had no such thing | [![v](https://img.shields.io/packagist/v/rasuvaeff/yii3-outbox?style=flat-square&label=&color=4c1)](https://packagist.org/packages/rasuvaeff/yii3-outbox) |
-| [**yii3-feature-flags**](https://github.com/rasuvaeff/yii3-feature-flags) | Feature flags with percentage rollout and deterministic per-subject bucketing — same user, same variant, every time. Pluggable backends (DB, Redis) + a UI | [![v](https://img.shields.io/packagist/v/rasuvaeff/yii3-feature-flags?style=flat-square&label=&color=4c1)](https://packagist.org/packages/rasuvaeff/yii3-feature-flags) |
-| [**yii3-mcp**](https://github.com/rasuvaeff/yii3-mcp) | MCP server for Yii3: expose CQRS handlers as LLM tools, auto-bridge OpenAPI → MCP, and — the part generic MCP servers skip — per-user RBAC and an audit log on everything the model touches | [![v](https://img.shields.io/packagist/v/rasuvaeff/yii3-mcp?style=flat-square&label=&color=4c1)](https://packagist.org/packages/rasuvaeff/yii3-mcp) |
+| Package | What it does |
+|---|---|
+| [**bulkhead**](https://github.com/rasuvaeff/bulkhead) | Cross-process concurrency limiter for PHP-FPM — keeps one slow upstream from eating every worker. Atomic slot acquisition via Redis Lua scripts, APCu spinlocks; tested against real forked processes (`pcntl`). Needs nothing but PHP and Redis |
+| [**rector-datetime-immutable**](https://github.com/rasuvaeff/rector-datetime-immutable) | Rector rules migrating mutable `DateTime` → `DateTimeImmutable` — and auto-fixing the lost mutations the migration silently creates, where `$date->modify('+1 day');` throws the new instance away. Static analysers report those; this fixes them in bulk |
+| [**property-testing**](https://github.com/rasuvaeff/property-testing) | Property-based testing with **integrated shrinking** (Hedgehog model) and stateful / model-based testing — the two things PHP's PBT libraries don't do. Generates inputs, finds a counterexample, shrinks it to the minimal one. A Testo plugin |
+| [**yii3-outbox**](https://github.com/rasuvaeff/yii3-outbox) | Transactional outbox — events committed in the same transaction as the data, then relayed. No lost messages on crash, no dual-write. Yii3 had no such thing |
+| [**yii3-feature-flags**](https://github.com/rasuvaeff/yii3-feature-flags) | Feature flags with percentage rollout and deterministic per-subject bucketing — same user, same variant, every time. Pluggable backends (DB, Redis) + a UI |
+| [**yii3-mcp**](https://github.com/rasuvaeff/yii3-mcp) | MCP server for Yii3: expose CQRS handlers as LLM tools, auto-bridge OpenAPI → MCP, and — the part generic MCP servers skip — per-user RBAC and an audit log on everything the model touches |
 
 <details>
 <summary><b>The rest of the ecosystem</b> — resilience, observability, Yii3 infrastructure</summary>
