@@ -61,6 +61,8 @@ Backend engineer with 7+ years of commercial PHP. I design and build high-load s
 **Quality**
 
 ![Psalm](https://img.shields.io/badge/Psalm-2D2D2D?style=for-the-badge)
+![PHPUnit](https://img.shields.io/badge/PHPUnit-3C9CD7?style=for-the-badge)
+![Codeception](https://img.shields.io/badge/Codeception-4D4D4D?style=for-the-badge)
 ![Testo](https://img.shields.io/badge/Testo-testing%20framework-00A3A3?style=for-the-badge)
 ![Infection](https://img.shields.io/badge/Infection-mutation%20testing-8A2BE2?style=for-the-badge)
 ![Rector](https://img.shields.io/badge/Rector-6E4C13?style=for-the-badge)
