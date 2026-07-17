@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Victor Razuvaev — Backend Engineer, PHP / Yii3. High-load services, ad-tech (RTB), distributed systems, Clean Architecture." width="100%">
+<img src="assets/banner.svg" alt="Victor Razuvaev — Backend Engineer, PHP / Yii. High-load services, ad-tech (RTB), distributed systems, Clean Architecture." width="100%">
 
 <br>
 
