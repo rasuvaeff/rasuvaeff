@@ -6,7 +6,7 @@
 
 ![Open To Work](https://img.shields.io/badge/Open%20To%20Work-4c1?style=for-the-badge)
 ![PHP](https://img.shields.io/badge/PHP-8.3%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
-[![Packagist](https://img.shields.io/badge/Packagist-49%20packages-F28D1A?style=for-the-badge&logo=packagist&logoColor=white)](https://packagist.org/packages/rasuvaeff/)
+[![Packagist](https://img.shields.io/badge/Packagist-55%20packages-F28D1A?style=for-the-badge&logo=packagist&logoColor=white)](https://packagist.org/packages/rasuvaeff/)
 
 </div>
 
@@ -67,7 +67,7 @@ Backend engineer with 15+ years of commercial PHP. I design and build high-load 
 
 ---
 
-### 📦 Open Source — [49 packages on Packagist](https://packagist.org/packages/rasuvaeff/)
+### 📦 Open Source — [55 packages on Packagist](https://packagist.org/packages/rasuvaeff/)
 
 Reusable PHP 8.3+ libraries with hardened CI/CD, SemVer, backward-compatibility checks, and tests on [Testo](https://php-testo.github.io) with mutation testing (MSI 85–100%).
 
@@ -87,12 +87,13 @@ Reusable PHP 8.3+ libraries with hardened CI/CD, SemVer, backward-compatibility 
 
 | Area | Packages |
 |---|---|
-| **Resilience** | [retry](https://github.com/rasuvaeff/retry) · [bulkhead](https://github.com/rasuvaeff/bulkhead) · [duration](https://github.com/rasuvaeff/duration) · [result](https://github.com/rasuvaeff/result) |
+| **Resilience** | [retry](https://github.com/rasuvaeff/retry) · [circuit-breaker](https://github.com/rasuvaeff/circuit-breaker) · [bulkhead](https://github.com/rasuvaeff/bulkhead) · [duration](https://github.com/rasuvaeff/duration) · [result](https://github.com/rasuvaeff/result) |
 | **Delivery** | [yii3-outbox](https://github.com/rasuvaeff/yii3-outbox) (+ `-db`, `-clickhouse`) · [yii3-webhooks](https://github.com/rasuvaeff/yii3-webhooks) (+ `-db`) · [yii3-outbox-webhooks-bridge](https://github.com/rasuvaeff/yii3-outbox-webhooks-bridge) · [yii3-idempotency](https://github.com/rasuvaeff/yii3-idempotency) (+ `-db`) — safe request retries via `Idempotency-Key` |
 | **Experiments** | [yii3-feature-flags](https://github.com/rasuvaeff/yii3-feature-flags) (+ `-db`, `-ui`) · [yii3-ab-testing](https://github.com/rasuvaeff/yii3-ab-testing) (+ `-db`, `-clickhouse`, `-web`, `-outbox`) |
 | **Observability** | [yii3-telemetry](https://github.com/rasuvaeff/yii3-telemetry) (+ `-otel`) · [yii3-metrics](https://github.com/rasuvaeff/yii3-metrics) (+ `-prometheus`) · [yii3-correlation-id](https://github.com/rasuvaeff/yii3-correlation-id) · [yii3-health-check](https://github.com/rasuvaeff/yii3-health-check) · [yii3-audit-log](https://github.com/rasuvaeff/yii3-audit-log) (+ `-db`) · [domain-monitor](https://github.com/rasuvaeff/domain-monitor) |
-| **AI / LLM** | [yii3-mcp](https://github.com/rasuvaeff/yii3-mcp) · [yii3-mcp-rbac-bridge](https://github.com/rasuvaeff/yii3-mcp-rbac-bridge) |
-| **Yii3 infrastructure** | [yii3-tenancy](https://github.com/rasuvaeff/yii3-tenancy) (+ `-db`) · [yii3-settings](https://github.com/rasuvaeff/yii3-settings) (+ `-db`, `-ui`) · [yii3-api-problem](https://github.com/rasuvaeff/yii3-api-problem) · [yii3-maintenance-mode](https://github.com/rasuvaeff/yii3-maintenance-mode) · [yii3-seo](https://github.com/rasuvaeff/yii3-seo) · [yii3-centrifugo](https://github.com/rasuvaeff/yii3-centrifugo) · [yii3-respect-validation](https://github.com/rasuvaeff/yii3-respect-validation) · [yii3-recaptcha](https://github.com/rasuvaeff/yii3-recaptcha) · [yii3-turnstile](https://github.com/rasuvaeff/yii3-turnstile) |
+| **AI / LLM** | [yii3-mcp](https://github.com/rasuvaeff/yii3-mcp) · [yii3-mcp-rbac-bridge](https://github.com/rasuvaeff/yii3-mcp-rbac-bridge) · [yii3-mcp-audit-log-bridge](https://github.com/rasuvaeff/yii3-mcp-audit-log-bridge) · [yii3-mcp-telemetry-bridge](https://github.com/rasuvaeff/yii3-mcp-telemetry-bridge) |
+| **Yii3 infrastructure** | [yii3-tenancy](https://github.com/rasuvaeff/yii3-tenancy) (+ `-db`) · [yii3-settings](https://github.com/rasuvaeff/yii3-settings) (+ `-db`, `-ui`) · [yii3-workflow](https://github.com/rasuvaeff/yii3-workflow) (+ `-db`) · [yii3-api-problem](https://github.com/rasuvaeff/yii3-api-problem) · [yii3-maintenance-mode](https://github.com/rasuvaeff/yii3-maintenance-mode) · [yii3-seo](https://github.com/rasuvaeff/yii3-seo) · [yii3-centrifugo](https://github.com/rasuvaeff/yii3-centrifugo) · [yii3-respect-validation](https://github.com/rasuvaeff/yii3-respect-validation) · [yii3-recaptcha](https://github.com/rasuvaeff/yii3-recaptcha) · [yii3-turnstile](https://github.com/rasuvaeff/yii3-turnstile) |
+| **Media** | [media-converter](https://github.com/rasuvaeff/media-converter) — type-safe ffmpeg/ffprobe wrapper: transcode/remux/filter pipeline, retry + bulkhead, progress events, DRM-aware probing |
 | **Query & domain** | [specification](https://github.com/rasuvaeff/specification) — Specification pattern, composable type-safe query building |
 | **ClickHouse** | [clickhouse-toolkit](https://github.com/rasuvaeff/clickhouse-toolkit) · [yii3-clickhouse-toolkit](https://github.com/rasuvaeff/yii3-clickhouse-toolkit) |
 | **Tooling** | [rector-named-literals](https://github.com/rasuvaeff/rector-named-literals) · [rector-datetime-immutable](https://github.com/rasuvaeff/rector-datetime-immutable) |
