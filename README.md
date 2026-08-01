@@ -7,6 +7,7 @@
 ![Open To Work](https://img.shields.io/badge/Open%20To%20Work-4c1?style=for-the-badge)
 ![PHP](https://img.shields.io/badge/PHP-8.3%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
 [![Packagist](https://img.shields.io/badge/Packagist-55%20packages-F28D1A?style=for-the-badge&logo=packagist&logoColor=white)](https://packagist.org/packages/rasuvaeff/)
+[![Stars](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/rasuvaeff/rasuvaeff/master/.github/badges/stars.json&style=for-the-badge&logoColor=black)](https://github.com/rasuvaeff)
 
 </div>
 

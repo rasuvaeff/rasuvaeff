@@ -1,0 +1,63 @@
+name: Update stars badge
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - .github/workflows/stars.yml
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compute total stars
+        uses: actions/github-script@v7
+        id: compute
+        with:
+          script: |
+            const fs = require('fs');
+            const username = 'rasuvaeff';
+            const path = '.github/badges/stars.json';
+
+            const repos = await octokit.paginate(
+              octokit.rest.repos.listForUser,
+              { username, per_page: 100, type: 'owner' }
+            );
+            const total = repos
+              .filter(r => !r.fork)
+              .reduce((sum, r) => sum + r.stargazers_count, 0);
+
+            let changed = true;
+            try {
+              const cur = JSON.parse(fs.readFileSync(path, 'utf8'));
+              changed = String(cur.message) !== String(total);
+            } catch (_) { /* no file yet -> create */ }
+
+            const badge = {
+              schemaVersion: 1,
+              label: 'GitHub Stars',
+              message: String(total),
+              color: 'FFCC01',
+              namedLogo: 'github'
+            };
+            fs.mkdirSync('.github/badges', { recursive: true });
+            fs.writeFileSync(path, JSON.stringify(badge, null, 2) + '\n');
+            core.setOutput('changed', changed);
+            core.info(`Total stars: ${total} (changed=${changed})`);
+
+      - name: Commit if changed
+        if: steps.compute.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/badges/stars.json
+          git commit -m "chore: update stars badge"
+          git push
