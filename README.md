@@ -72,7 +72,7 @@ Backend engineer with 15+ years of commercial PHP. I design and build high-load 
 
 Reusable PHP 8.3+ libraries with hardened CI/CD, SemVer, backward-compatibility checks, and tests on [Testo](https://php-testo.github.io) with mutation testing (MSI 85–100%).
 
-**How does one person ship 55 of these?** Not by cutting corners — [**php-package-toolkit**](https://github.com/rasuvaeff/php-package-toolkit) is the actual answer: the templates, batch tooling, and machine-checked rulebook every package is built from. Psalm level 1 with zero suppressions, mutation-tested (not just line-covered — see the toolkit's `ER-003` writeup on the difference), backward-compatibility-checked before every major, hardened CI with SHA-pinned actions. AI-assisted, human-gated — the process is public, not just the output.
+**How does one person ship 55 of these?** Not by cutting corners — the volume is a side effect of a repeatable process, not the goal. The process is public in [**php-package-toolkit**](https://github.com/rasuvaeff/php-package-toolkit) and explained in [Workflow](#-workflow--llm-driven-human-gated) below.
 
 Five that show the range:
 
@@ -104,6 +104,20 @@ Five that show the range:
 | **Tooling** | [rector-named-literals](https://github.com/rasuvaeff/rector-named-literals) · [rector-datetime-immutable](https://github.com/rasuvaeff/rector-datetime-immutable) |
 
 </details>
+
+---
+
+### 🤖 Workflow — LLM-driven, human-gated
+
+The honest answer to "how does one person publish [55 packages](https://packagist.org/packages/rasuvaeff/)?" is that the agent does the mechanical work inside a rulebook a human wrote — and that rulebook is [**php-package-toolkit**](https://github.com/rasuvaeff/php-package-toolkit), open source, so the claim is auditable rather than asserted.
+
+**The loop**
+
+1. **Scaffold from contract, not from scratch.** An agent generates each package from versioned templates plus a machine-checked rulebook (`AGENTS.md`). File layout, code style, CI pipeline, doc structure, and security rules are a fixed contract, never a per-project decision.
+2. **Write, then gate.** The agent writes the code, tests, and docs, then runs the same gate every package must pass: Psalm **level 1 with zero suppressions**, mutation testing (MSI 85–100% — line coverage is not enough; the toolkit's `ER-003` writeup covers the difference), backward-compatibility checks before every major, SHA-pinned hardened CI, and [Testo](https://php-testo.github.io) tests with property-based coverage where invariants exist.
+3. **Human owns the judgment.** I design the API, decide the abstractions and layer boundaries, review every change, and own release decisions. The agent never merges, tags, or publishes on its own — those are explicit human gates encoded in the skill workflows that drive each step.
+
+What the agent makes cheap is execution, not judgment. Deciding what the right abstraction for a transactional outbox or a deterministic A/B engine looks like is the part I bring; the toolkit makes shipping it a matter of hours instead of weeks, without lowering the bar.
 
 ---
 
