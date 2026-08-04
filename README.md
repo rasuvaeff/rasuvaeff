@@ -6,7 +6,7 @@
 
 ![Open To Work](https://img.shields.io/badge/Open%20To%20Work-4c1?style=for-the-badge)
 ![PHP](https://img.shields.io/badge/PHP-8.3%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
-[![Packagist](https://img.shields.io/badge/Packagist-57%20packages-F28D1A?style=for-the-badge&logo=packagist&logoColor=white)](https://packagist.org/packages/rasuvaeff/)
+[![Packagist](https://img.shields.io/badge/Packagist-Open%20Source-F28D1A?style=for-the-badge&logo=packagist&logoColor=white)](https://packagist.org/packages/rasuvaeff/)
 [![Stars](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/rasuvaeff/rasuvaeff/master/.github/badges/stars.json&style=for-the-badge&logoColor=black)](https://github.com/rasuvaeff)
 
 </div>
@@ -68,11 +68,11 @@ Backend engineer with 15+ years of commercial PHP. I design and build high-load 
 
 ---
 
-### 📦 Open Source — [57 packages on Packagist](https://packagist.org/packages/rasuvaeff/)
+### 📦 Open Source — [packages on Packagist](https://packagist.org/packages/rasuvaeff/)
 
 Reusable PHP 8.3+ libraries with hardened CI/CD, SemVer, backward-compatibility checks, and tests on [Testo](https://php-testo.github.io) with mutation testing (MSI 85–100%).
 
-**How does one person ship 55 of these?** Not by cutting corners — the volume is a side effect of a repeatable process, not the goal. The process is public in [**php-package-toolkit**](https://github.com/rasuvaeff/php-package-toolkit) and explained in [Workflow](#-workflow--llm-driven-human-gated) below.
+**How does one person ship this many?** Not by cutting corners — the volume is a side effect of a repeatable process, not the goal. The process is public in [**php-package-toolkit**](https://github.com/rasuvaeff/php-package-toolkit) and explained in [Workflow](#-workflow--llm-driven-human-gated) below.
 
 Five that show the range:
 
@@ -109,7 +109,7 @@ Five that show the range:
 
 ### 🤖 Workflow — LLM-driven, human-gated
 
-The honest answer to "how does one person publish [55 packages](https://packagist.org/packages/rasuvaeff/)?" is that the agent does the mechanical work inside a rulebook a human wrote — and that rulebook is [**php-package-toolkit**](https://github.com/rasuvaeff/php-package-toolkit), open source, so the claim is auditable rather than asserted.
+The honest answer to "how does one person [publish this many packages](https://packagist.org/packages/rasuvaeff/)?" is that the agent does the mechanical work inside a rulebook a human wrote — and that rulebook is [**php-package-toolkit**](https://github.com/rasuvaeff/php-package-toolkit), open source, so the claim is auditable rather than asserted.
 
 **The loop**
 
