@@ -8,6 +8,7 @@
 ![PHP](https://img.shields.io/badge/PHP-8.3%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
 [![Packagist](https://img.shields.io/badge/Packagist-Open%20Source-F28D1A?style=for-the-badge&logo=packagist&logoColor=white)](https://packagist.org/packages/rasuvaeff/)
 [![Stars](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/rasuvaeff/rasuvaeff/master/.github/badges/stars.json&style=for-the-badge&logoColor=black)](https://github.com/rasuvaeff)
+[![Downloads](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/rasuvaeff/rasuvaeff/master/.github/badges/downloads.json&style=for-the-badge)](https://packagist.org/packages/rasuvaeff/)
 
 </div>
 
@@ -15,11 +16,12 @@
 
 ### 👨‍💻 About
 
-Backend engineer with 15+ years of commercial PHP. I design and build high-load services and APIs — and I publish the reusable parts as open source.
+Backend engineer with 15+ years of commercial PHP. I design and build high-load services and APIs — and I publish the reusable parts as open source: 89 packages on Packagist so far.
 
 - **10 years in ad-tech**: advertising networks with RTB (Real-Time Bidding) integrations, buying and selling traffic — MySQL for operational data, ClickHouse for impression analytics, Redis/Memcached for caching.
 - **Now**: product development on Yii3 / PHP 8.5 with Clean Architecture (Domain / Application / Infrastructure / Endpoint, boundaries enforced statically by Deptrac), plus support and refactoring of large Yii2 legacy systems.
 - **LLM in production**: the application acts as an MCP server — assistants connect over Model Context Protocol and call domain tools via tool-calling, guarded by per-user RBAC and an audit log.
+- **Upstream**: a namespace-matching fix merged into Yii3 core (`yiisoft/db-migration` #350) — the ecosystem feeds back into the framework it is built on.
 - I care about the things that are invisible until they break: retries, idempotency, exactly-once delivery, backpressure, mutation-tested code.
 
 ---
@@ -54,7 +56,12 @@ Backend engineer with 15+ years of commercial PHP. I design and build high-load 
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-425CC7?style=for-the-badge&logo=opentelemetry&logoColor=white)
 ![Centrifugo](https://img.shields.io/badge/Centrifugo%20%2F%20WebSocket-1B1F23?style=for-the-badge)
+
+**AI / LLM**
+
+![MCP](https://img.shields.io/badge/Model%20Context%20Protocol-1B1F23?style=for-the-badge&logo=modelcontextprotocol&logoColor=white)
 
 **Quality**
 
@@ -70,7 +77,7 @@ Backend engineer with 15+ years of commercial PHP. I design and build high-load 
 
 ### 📦 Open Source — [packages on Packagist](https://packagist.org/packages/rasuvaeff/)
 
-Reusable PHP 8.3+ libraries with hardened CI/CD, SemVer, backward-compatibility checks, and tests on [Testo](https://php-testo.github.io) with mutation testing (MSI 85–100%).
+**89 packages** — reusable PHP 8.3+ libraries with hardened CI/CD, SemVer, backward-compatibility checks, and tests on [Testo](https://php-testo.github.io) with mutation testing (MSI 85–100%).
 
 **How does one person ship this many?** Not by cutting corners — the volume is a side effect of a repeatable process, not the goal. The process is public in [**php-package-toolkit**](https://github.com/rasuvaeff/php-package-toolkit) and explained in [Workflow](#-workflow--llm-driven-human-gated) below.
 
@@ -85,7 +92,7 @@ Five that show the range:
 | [**clickhouse-toolkit**](https://github.com/rasuvaeff/clickhouse-toolkit) | Framework-agnostic ClickHouse toolkit: parameterized query builder, data reader, batch writer, DDL builder, partition manager, migration runner — the pieces ORM query builders don't cover for an analytics store |
 
 <details>
-<summary><b>The rest of the ecosystem</b> — resilience, observability, Yii3 infrastructure</summary>
+<summary><b>The rest of the ecosystem</b> — resilience, observability, payments, files, testing, Yii3 infrastructure</summary>
 
 <br>
 
@@ -129,7 +136,7 @@ What the agent makes cheap is execution, not judgment. Deciding what the right a
 ### 🔭 What I'm building
 
 - **A fitness / training platform backend** (Yii3, PHP 8.5, PostgreSQL) — activity tracking with `.fit` file parsing, duels and leagues, JWT auth, S3 storage, real-time via Centrifugo, transactional outbox for event delivery. Strict Clean Architecture layering enforced by Deptrac; built on my own packages.
-- **A Yii3 product backend** (PHP 8.5, MySQL / ClickHouse / Memcached) — admin panel, REST API with OpenAPI, RBAC, multi-language, media pipeline, and an MCP server that lets LLM assistants operate the product safely.
+- **A Yii3 product backend** (PHP 8.5, MySQL / ClickHouse / Memcached) — admin panel, REST API with OpenAPI, RBAC, multi-language, media pipeline, OpenTelemetry observability, and an MCP server that lets LLM assistants operate the product safely.
 
 ---
 
