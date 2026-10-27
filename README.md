@@ -21,7 +21,6 @@ Backend engineer with 15+ years of commercial PHP. I design and build high-load 
 - **10 years in ad-tech**: advertising networks with RTB (Real-Time Bidding) integrations, buying and selling traffic — MySQL for operational data, ClickHouse for impression analytics, Redis/Memcached for caching.
 - **Now**: product development on Yii3 / PHP 8.5 with Clean Architecture (Domain / Application / Infrastructure / Endpoint, boundaries enforced statically by Deptrac), plus support and refactoring of large Yii2 legacy systems.
 - **LLM in production**: the application acts as an MCP server — assistants connect over Model Context Protocol and call domain tools via tool-calling, guarded by per-user RBAC and an audit log.
-- **Upstream**: a namespace-matching fix merged into Yii3 core (`yiisoft/db-migration` #350) — the ecosystem feeds back into the framework it is built on.
 - I care about the things that are invisible until they break: retries, idempotency, exactly-once delivery, backpressure, mutation-tested code.
 
 ---
