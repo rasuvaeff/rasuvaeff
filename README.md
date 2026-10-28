@@ -54,6 +54,7 @@ Backend engineer with 15+ years of commercial PHP. I design and build high-load 
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
 ![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-425CC7?style=for-the-badge&logo=opentelemetry&logoColor=white)
+![Jaeger](https://img.shields.io/badge/Jaeger-66CFE3?style=for-the-badge&logo=jaeger&logoColor=black)
 ![Centrifugo](https://img.shields.io/badge/Centrifugo%20%2F%20WebSocket-1B1F23?style=for-the-badge)
 
 **AI / LLM**
