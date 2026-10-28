@@ -4,10 +4,8 @@
 
 <br>
 
-![Open To Work](https://img.shields.io/badge/Open%20To%20Work-4c1?style=for-the-badge)
 ![PHP](https://img.shields.io/badge/PHP-8.3%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
 [![Packagist](https://img.shields.io/badge/Packagist-Open%20Source-F28D1A?style=for-the-badge&logo=packagist&logoColor=white)](https://packagist.org/packages/rasuvaeff/)
-[![Stars](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/rasuvaeff/rasuvaeff/master/.github/badges/stars.json&style=for-the-badge&logoColor=black)](https://github.com/rasuvaeff)
 [![Downloads](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/rasuvaeff/rasuvaeff/master/.github/badges/downloads.json&style=for-the-badge)](https://packagist.org/packages/rasuvaeff/)
 
 </div>
@@ -66,7 +64,6 @@ Backend engineer with 15+ years of commercial PHP. I design and build high-load 
 
 ![Psalm](https://img.shields.io/badge/Psalm-2D2D2D?style=for-the-badge)
 ![PHPUnit](https://img.shields.io/badge/PHPUnit-3C9CD7?style=for-the-badge)
-![Codeception](https://img.shields.io/badge/Codeception-4D4D4D?style=for-the-badge)
 ![Testo](https://img.shields.io/badge/Testo-00A3A3?style=for-the-badge)
 ![Infection](https://img.shields.io/badge/Infection-8A2BE2?style=for-the-badge)
 ![Rector](https://img.shields.io/badge/Rector-6E4C13?style=for-the-badge)
@@ -78,17 +75,19 @@ Backend engineer with 15+ years of commercial PHP. I design and build high-load 
 
 **89 packages** — reusable PHP 8.3+ libraries with hardened CI/CD, SemVer, backward-compatibility checks, and tests on [Testo](https://php-testo.github.io) with mutation testing (MSI 85–100%).
 
-**How does one person ship this many?** Not by cutting corners — the volume is a side effect of a repeatable process, not the goal. The process is public in [**php-package-toolkit**](https://github.com/rasuvaeff/php-package-toolkit) and explained in [Workflow](#-workflow--llm-driven-human-gated) below.
+How one person ships this many: see [Workflow](#-workflow--llm-driven-human-gated) below.
+
+Built to be used by AI coding assistants too: every package ships an `llms.txt` API reference, and 40 of them ship an agent skill (`SKILL.md`) that projects using the [llm/skills](https://github.com/roxblnfk/skills) Composer plugin pick up on `composer install`.
 
 Five that show the range:
 
 | Package | What it does |
 |---|---|
-| [**yii3-ab-testing**](https://github.com/rasuvaeff/yii3-ab-testing) | Deterministic A/B testing for Yii3 — stateless hash-based assignment (same subject, same variant, every time, no session state), weighted variants, forced variant for QA, explicit exposure/conversion tracking. A full family: `-db`, `-clickhouse`, `-web`, `-outbox` |
-| [**yii3-outbox**](https://github.com/rasuvaeff/yii3-outbox) | Transactional outbox — events committed in the same transaction as the data, then relayed. No lost messages on crash, no dual-write. Yii3 had no such thing |
-| [**yii3-mcp**](https://github.com/rasuvaeff/yii3-mcp) | MCP server for Yii3: expose CQRS handlers as LLM tools, auto-bridge OpenAPI → MCP, and — the part generic MCP servers skip — per-user RBAC and an audit log on everything the model touches |
-| [**property-testing-core**](https://github.com/rasuvaeff/property-testing-core) | Framework-agnostic property-based testing **engine**: generators with integrated shrinking (Hedgehog model), a structured runner, regression corpus, lifecycle events — plus stateful/model-based testing. No test-framework dependency; Testo and PHPUnit adapters plug it in |
-| [**clickhouse-toolkit**](https://github.com/rasuvaeff/clickhouse-toolkit) | Framework-agnostic ClickHouse toolkit: parameterized query builder, data reader, batch writer, DDL builder, partition manager, migration runner — the pieces ORM query builders don't cover for an analytics store |
+| [**yii3-ab-testing**](https://github.com/rasuvaeff/yii3-ab-testing) · [docs](https://rasuvaeff.github.io/yii3-ab-testing/) | Deterministic A/B testing for Yii3 — stateless hash-based assignment (same subject, same variant, every time, no session state), weighted variants, forced variant for QA, explicit exposure/conversion tracking. A full family: `-db`, `-clickhouse`, `-web`, `-outbox` |
+| [**context**](https://github.com/rasuvaeff/context) | Deadlines, cancellation and request-scoped values for PHP — Go's `context.Context` idea, with no dependencies. One budget follows a request through every layer: HTTP client timeouts (`-http`), database-side statement timeouts on MySQL / MariaDB / PostgreSQL (`-db`), graceful shutdown of CLI workers on OS signals (`-cli`), external processes stopped when the deadline passes (`-process`). The docs say plainly where an in-flight call cannot be aborted |
+| [**yii3-mcp**](https://github.com/rasuvaeff/yii3-mcp) · [docs](https://rasuvaeff.github.io/yii3-mcp/) | MCP server for Yii3 on the official `mcp/sdk`: domain operations become LLM tools through attributes, operations from an OpenAPI spec are bridged as tools — and, the part generic MCP servers skip, per-user RBAC, an audit log and telemetry on everything the model touches |
+| [**property-testing-core**](https://github.com/rasuvaeff/property-testing-core) · [docs](https://rasuvaeff.github.io/property-testing-core/) | Framework-agnostic property-based testing **engine**: generators with integrated shrinking (Hedgehog model), a structured runner, regression corpus, lifecycle events — plus stateful/model-based testing. No test-framework dependency; Testo and PHPUnit adapters plug it in |
+| [**understudy**](https://github.com/rasuvaeff/understudy) · [docs](https://rasuvaeff.github.io/understudy/) | Test doubles where the stubbed call is a real call: `when(fn () => $repo->find(1))->returns($book)` — no method names in strings, so a rename or a wrong argument is a type error before the test runs. Testo and PHPUnit adapters, Psalm and PHPStan plugins |
 
 <details>
 <summary><b>The rest of the ecosystem</b> — resilience, observability, payments, files, testing, Yii3 infrastructure</summary>
@@ -97,7 +96,7 @@ Five that show the range:
 
 | Area | Packages |
 |---|---|
-| **Resilience** | [retry](https://github.com/rasuvaeff/retry) · [circuit-breaker](https://github.com/rasuvaeff/circuit-breaker) · [bulkhead](https://github.com/rasuvaeff/bulkhead) · [duration](https://github.com/rasuvaeff/duration) · [result](https://github.com/rasuvaeff/result) |
+| **Resilience** | [resilience](https://github.com/rasuvaeff/resilience) — retry, circuit breaker and bulkhead composed in the right order · [retry](https://github.com/rasuvaeff/retry) · [circuit-breaker](https://github.com/rasuvaeff/circuit-breaker) · [bulkhead](https://github.com/rasuvaeff/bulkhead) · [duration](https://github.com/rasuvaeff/duration) · [result](https://github.com/rasuvaeff/result) |
 | **Context & cancellation** | [context](https://github.com/rasuvaeff/context) (+ `-cli`, `-db`, `-http`, `-process`) — deadlines, cancellation and request-scoped values that follow a request through HTTP calls, DB statement timeouts, CLI worker shutdown and subprocesses |
 | **Delivery** | [yii3-outbox](https://github.com/rasuvaeff/yii3-outbox) (+ `-db`, `-clickhouse`) · [yii3-webhooks](https://github.com/rasuvaeff/yii3-webhooks) (+ `-db`) · [yii3-outbox-webhooks-bridge](https://github.com/rasuvaeff/yii3-outbox-webhooks-bridge) · [yii3-idempotency](https://github.com/rasuvaeff/yii3-idempotency) (+ `-db`, `-redis`) — safe request retries via `Idempotency-Key` |
 | **Experiments** | [yii3-feature-flags](https://github.com/rasuvaeff/yii3-feature-flags) (+ `-db`, `-ui`) · [yii3-ab-testing](https://github.com/rasuvaeff/yii3-ab-testing) (+ `-db`, `-clickhouse`, `-web`, `-outbox`) |
@@ -106,13 +105,13 @@ Five that show the range:
 | **AI / LLM** | [yii3-mcp](https://github.com/rasuvaeff/yii3-mcp) · [yii3-mcp-rbac-bridge](https://github.com/rasuvaeff/yii3-mcp-rbac-bridge) · [yii3-mcp-audit-log-bridge](https://github.com/rasuvaeff/yii3-mcp-audit-log-bridge) · [yii3-mcp-telemetry-bridge](https://github.com/rasuvaeff/yii3-mcp-telemetry-bridge) |
 | **Payments** | [payments](https://github.com/rasuvaeff/payments) — provider-neutral payment contracts, PSR-18 transport and webhook pipeline · [payments-testing](https://github.com/rasuvaeff/payments-testing) — deterministic fake gateways and framework-agnostic contract assertions |
 | **Yii3 infrastructure** | [yii3-tenancy](https://github.com/rasuvaeff/yii3-tenancy) (+ `-db`) · [yii3-settings](https://github.com/rasuvaeff/yii3-settings) (+ `-db`, `-ui`) · [yii3-workflow](https://github.com/rasuvaeff/yii3-workflow) (+ `-db`) · [yii3-api-problem](https://github.com/rasuvaeff/yii3-api-problem) · [yii3-maintenance-mode](https://github.com/rasuvaeff/yii3-maintenance-mode) · [yii3-seo](https://github.com/rasuvaeff/yii3-seo) · [yii3-centrifugo](https://github.com/rasuvaeff/yii3-centrifugo) · [yii3-respect-validation](https://github.com/rasuvaeff/yii3-respect-validation) · [yii3-recaptcha](https://github.com/rasuvaeff/yii3-recaptcha) · [yii3-turnstile](https://github.com/rasuvaeff/yii3-turnstile) |
-| **Files** | [yii3-filestorage](https://github.com/rasuvaeff/yii3-filestorage) (+ `-db`, `-flysystem`, `-web`, `-attachments`) — DI-native storage facade over swappable backends, deduplication ledger, signed downloads, tenant-scoped attachments |
+| **Files** | [yii3-filestorage](https://github.com/rasuvaeff/yii3-filestorage) (+ `-db`, `-flysystem`, `-web`, `-attachments`, `-images`) — DI-native storage facade over swappable backends, deduplication ledger, signed downloads, tenant-scoped attachments, named-preset image derivatives |
 | **Media** | [media-converter](https://github.com/rasuvaeff/media-converter) — type-safe ffmpeg/ffprobe wrapper: transcode/remux/filter pipeline, retry + bulkhead, progress events, DRM-aware probing |
 | **HTTP & semantics** | [pinned-http-client](https://github.com/rasuvaeff/pinned-http-client) — PSR-18 client for untrusted URLs: resolves the host, checks every address, pins the connection · [link-preview](https://github.com/rasuvaeff/link-preview) — SSRF-safe OpenGraph / Twitter Cards extraction · [json-ld](https://github.com/rasuvaeff/json-ld) — JSON-LD 1.1 processor: expand, flatten, node API, RDF, N-Quads |
 | **Query & domain** | [specification](https://github.com/rasuvaeff/specification) — Specification pattern, composable type-safe query building · [schema](https://github.com/rasuvaeff/schema) — schema-as-code combinators: one definition drives runtime validation, property-based generation and JSON Schema export |
 | **ClickHouse** | [clickhouse-toolkit](https://github.com/rasuvaeff/clickhouse-toolkit) · [yii3-clickhouse-toolkit](https://github.com/rasuvaeff/yii3-clickhouse-toolkit) |
 | **Testing & quality** | property-testing-core adapters: [property-testing-testo](https://github.com/rasuvaeff/property-testing-testo) · [property-testing-phpunit](https://github.com/rasuvaeff/property-testing-phpunit) · [property-testing-names](https://github.com/rasuvaeff/property-testing-names) · [property-testing-openapi](https://github.com/rasuvaeff/property-testing-openapi) · [understudy](https://github.com/rasuvaeff/understudy) (+ `-testo`, `-phpunit`, `-psalm`, `-phpstan`) — test doubles with a call-closure API and static-analysis plugins · [openapi-contract](https://github.com/rasuvaeff/openapi-contract) — framework-neutral OpenAPI contract validation for PSR-7 · [doc-exec](https://github.com/rasuvaeff/doc-exec) — doctest for PHP: executes fenced code blocks from docs, diffs the output · [quality-ledger](https://github.com/rasuvaeff/quality-ledger) · [mutation-history](https://github.com/rasuvaeff/mutation-history) — append-only quality ledgers with regression ratchets |
-| **Tooling** | [rector-named-literals](https://github.com/rasuvaeff/rector-named-literals) · [rector-datetime-immutable](https://github.com/rasuvaeff/rector-datetime-immutable) · [ecosystem-sandbox](https://github.com/rasuvaeff/ecosystem-sandbox) — runnable checkout sandbox for the whole ecosystem |
+| **Tooling** | [rector-named-literals](https://github.com/rasuvaeff/rector-named-literals) · [rector-datetime-immutable](https://github.com/rasuvaeff/rector-datetime-immutable) · [ecosystem-sandbox](https://github.com/rasuvaeff/ecosystem-sandbox) — runnable checkout sandbox for the whole ecosystem (a demo application, not a package) |
 
 </details>
 
@@ -134,8 +133,9 @@ What the agent makes cheap is execution, not judgment. Deciding what the right a
 
 ### 🔭 What I'm building
 
+- **A sports fan site** (Yii3, PHP 8.5, PostgreSQL / Redis, Temporal, real-time via Centrifugo; built on my own packages) — match calendar with live updates, a long-running archive of player and head-to-head statistics, fan profiles, guestbook and private messages, admin panel.
+- [**ecosystem-sandbox**](https://github.com/rasuvaeff/ecosystem-sandbox) — a runnable Yii3 shop that composes 60+ of my packages into one checkout and payment flow: outbox, idempotency, retries, circuit breaker, webhooks and telemetry working together, not just in isolation.
 - **A fitness / training platform backend** (Yii3, PHP 8.5, PostgreSQL) — activity tracking with `.fit` file parsing, duels and leagues, JWT auth, S3 storage, real-time via Centrifugo, transactional outbox for event delivery. Strict Clean Architecture layering enforced by Deptrac; built on my own packages.
-- **A Yii3 product backend** (PHP 8.5, MySQL / ClickHouse / Memcached) — admin panel, REST API with OpenAPI, RBAC, multi-language, media pipeline, OpenTelemetry observability, and an MCP server that lets LLM assistants operate the product safely.
 
 ---
 
