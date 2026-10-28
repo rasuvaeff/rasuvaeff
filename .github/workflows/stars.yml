@@ -8,6 +8,7 @@ on:
     branches: [master]
     paths:
       - .github/workflows/stars.yml
+      - README.md
 
 permissions:
   contents: write
@@ -18,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Compute total stars and downloads
+      - name: Compute badges and recent releases
         uses: actions/github-script@v7
         id: compute
         with:
@@ -27,6 +28,8 @@ jobs:
             const username = 'rasuvaeff';
             const starsPath = '.github/badges/stars.json';
             const downloadsPath = '.github/badges/downloads.json';
+            const packagesPath = '.github/badges/packages.json';
+            const readmePath = 'README.md';
 
             const repos = await octokit.paginate(
               octokit.rest.repos.listForUser,
@@ -38,10 +41,23 @@ jobs:
 
             const names = (await (await fetch('https://packagist.org/packages/list.json?vendor=rasuvaeff')).json()).packageNames;
             let downloads = 0;
+            let packages = 0;
+            const releases = [];
             for (const name of names) {
-              const pkg = await (await fetch(`https://packagist.org/packages/${name}.json`)).json();
-              downloads += pkg.package.downloads.total;
+              const pkg = (await (await fetch(`https://packagist.org/packages/${name}.json`)).json()).package;
+              downloads += pkg.downloads.total;
+              if (pkg.abandoned) continue;
+              packages++;
+              // packages/<name>.json lags behind new tags; the p2 metadata is fresh.
+              const tagged = (await (await fetch(`https://repo.packagist.org/p2/${name}.json`)).json()).packages[name] ?? [];
+              const stable = tagged
+                .filter(v => /^v?\d+\.\d+\.\d+$/.test(v.version) && v.time)
+                .sort((a, b) => b.time.localeCompare(a.time));
+              if (stable.length > 0) {
+                releases.push({ name: name.split('/')[1], version: stable[0].version, time: stable[0].time });
+              }
             }
+            releases.sort((a, b) => b.time.localeCompare(a.time));
 
             fs.mkdirSync('.github/badges', { recursive: true });
             let changed = false;
@@ -71,14 +87,37 @@ jobs:
               namedLogo: 'packagist'
             });
 
+            write(packagesPath, {
+              schemaVersion: 1,
+              label: 'Packages',
+              message: String(packages),
+              color: '777BB4',
+              namedLogo: 'packagist'
+            });
+
+            const readme = fs.readFileSync(readmePath, 'utf8');
+            const list = releases.slice(0, 5).map(r =>
+              `| ${r.time.slice(0, 10)} | [**${r.name}** ${r.version}](https://github.com/${username}/${r.name}/releases/tag/${r.version}) |`
+            ).join('\n');
+            const updated = readme
+              .replace(/<!-- packages:count -->\d+<!-- \/packages:count -->/g, `<!-- packages:count -->${packages}<!-- /packages:count -->`)
+              .replace(
+                /<!-- releases:start -->[\s\S]*?<!-- releases:end -->/,
+                `<!-- releases:start -->\n| Date | Release |\n|---|---|\n${list}\n<!-- releases:end -->`
+              );
+            if (updated !== readme) {
+              fs.writeFileSync(readmePath, updated);
+              changed = true;
+            }
+
             core.setOutput('changed', changed);
-            core.info(`Total stars: ${stars}, downloads: ${downloads} (changed=${changed})`);
+            core.info(`Stars: ${stars}, downloads: ${downloads}, packages: ${packages} (changed=${changed})`);
 
       - name: Commit if changed
         if: steps.compute.outputs.changed == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .github/badges/stars.json .github/badges/downloads.json
-          git commit -m "chore: update badges"
+          git add .github/badges README.md
+          git commit -m "chore: update badges and recent releases"
           git push

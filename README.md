@@ -6,6 +6,7 @@
 
 ![PHP](https://img.shields.io/badge/PHP-8.3%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
 [![Packagist](https://img.shields.io/badge/Packagist-Open%20Source-F28D1A?style=for-the-badge&logo=packagist&logoColor=white)](https://packagist.org/packages/rasuvaeff/)
+[![Packages](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/rasuvaeff/rasuvaeff/master/.github/badges/packages.json&style=for-the-badge)](https://packagist.org/packages/rasuvaeff/)
 [![Downloads](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/rasuvaeff/rasuvaeff/master/.github/badges/downloads.json&style=for-the-badge)](https://packagist.org/packages/rasuvaeff/)
 
 </div>
@@ -14,7 +15,7 @@
 
 ### 👨‍💻 About
 
-Backend engineer with 15+ years of commercial PHP. I design and build high-load services and APIs — and I publish the reusable parts as open source: 89 packages on Packagist so far.
+Backend engineer with 15+ years of commercial PHP. I design and build high-load services and APIs — and I publish the reusable parts as open source: <!-- packages:count -->89<!-- /packages:count --> packages on Packagist so far.
 
 - **10 years in ad-tech**: advertising networks with RTB (Real-Time Bidding) integrations, buying and selling traffic — MySQL for operational data, ClickHouse for impression analytics, Redis/Memcached for caching.
 - **Now**: product development on Yii3 / PHP 8.5 with Clean Architecture (Domain / Application / Infrastructure / Endpoint, boundaries enforced statically by Deptrac), plus support and refactoring of large Yii2 legacy systems.
@@ -74,7 +75,7 @@ Backend engineer with 15+ years of commercial PHP. I design and build high-load 
 
 ### 📦 Open Source — [packages on Packagist](https://packagist.org/packages/rasuvaeff/)
 
-**89 packages** — reusable PHP 8.3+ libraries with hardened CI/CD, SemVer, backward-compatibility checks, and tests on [Testo](https://php-testo.github.io) with mutation testing (MSI 85–100%).
+**<!-- packages:count -->89<!-- /packages:count --> packages** — reusable PHP 8.3+ libraries with hardened CI/CD, SemVer, backward-compatibility checks, and tests on [Testo](https://php-testo.github.io) with mutation testing (MSI 85–100%).
 
 How one person ships this many: see [Workflow](#-workflow--llm-driven-human-gated) below.
 
@@ -116,6 +117,18 @@ Five that show the range:
 | **Tooling** | [rector-named-literals](https://github.com/rasuvaeff/rector-named-literals) · [rector-datetime-immutable](https://github.com/rasuvaeff/rector-datetime-immutable) · [ecosystem-sandbox](https://github.com/rasuvaeff/ecosystem-sandbox) — runnable checkout sandbox for the whole ecosystem (a demo application, not a package) |
 
 </details>
+
+**Recent releases** — updated daily from Packagist:
+
+<!-- releases:start -->
+| Date | Release |
+|---|---|
+| 2026-10-28 | [**yii3-filestorage** v0.4.0](https://github.com/rasuvaeff/yii3-filestorage/releases/tag/v0.4.0) |
+| 2026-10-28 | [**yii3-filestorage-images** v0.3.0](https://github.com/rasuvaeff/yii3-filestorage-images/releases/tag/v0.3.0) |
+| 2026-10-28 | [**yii3-filestorage-web** v0.4.0](https://github.com/rasuvaeff/yii3-filestorage-web/releases/tag/v0.4.0) |
+| 2026-10-27 | [**yii3-idempotency** v2.3.0](https://github.com/rasuvaeff/yii3-idempotency/releases/tag/v2.3.0) |
+| 2026-10-26 | [**yii3-idempotency-redis** v1.0.0](https://github.com/rasuvaeff/yii3-idempotency-redis/releases/tag/v1.0.0) |
+<!-- releases:end -->
 
 ---
 
