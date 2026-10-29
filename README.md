@@ -123,11 +123,11 @@ Five that show the range:
 <!-- releases:start -->
 | Date | Release |
 |---|---|
-| 2026-10-28 | [**yii3-filestorage** v0.4.0](https://github.com/rasuvaeff/yii3-filestorage/releases/tag/v0.4.0) |
-| 2026-10-28 | [**yii3-filestorage-images** v0.3.0](https://github.com/rasuvaeff/yii3-filestorage-images/releases/tag/v0.3.0) |
+| 2026-10-28 | [**yii3-filestorage** v0.7.0](https://github.com/rasuvaeff/yii3-filestorage/releases/tag/v0.7.0) |
+| 2026-10-28 | [**yii3-filestorage-images** v0.4.1](https://github.com/rasuvaeff/yii3-filestorage-images/releases/tag/v0.4.1) |
+| 2026-10-28 | [**yii3-filestorage-attachments** v0.2.0](https://github.com/rasuvaeff/yii3-filestorage-attachments/releases/tag/v0.2.0) |
 | 2026-10-28 | [**yii3-filestorage-web** v0.4.0](https://github.com/rasuvaeff/yii3-filestorage-web/releases/tag/v0.4.0) |
 | 2026-10-27 | [**yii3-idempotency** v2.3.0](https://github.com/rasuvaeff/yii3-idempotency/releases/tag/v2.3.0) |
-| 2026-10-26 | [**yii3-idempotency-redis** v1.0.0](https://github.com/rasuvaeff/yii3-idempotency-redis/releases/tag/v1.0.0) |
 <!-- releases:end -->
 
 ---
