@@ -123,11 +123,11 @@ Five that show the range:
 <!-- releases:start -->
 | Date | Release |
 |---|---|
-| 2026-10-29 | [**yii3-filestorage-images** v0.5.0](https://github.com/rasuvaeff/yii3-filestorage-images/releases/tag/v0.5.0) |
-| 2026-10-28 | [**yii3-filestorage** v0.7.0](https://github.com/rasuvaeff/yii3-filestorage/releases/tag/v0.7.0) |
-| 2026-10-28 | [**yii3-filestorage-attachments** v0.2.0](https://github.com/rasuvaeff/yii3-filestorage-attachments/releases/tag/v0.2.0) |
-| 2026-10-28 | [**yii3-filestorage-web** v0.4.0](https://github.com/rasuvaeff/yii3-filestorage-web/releases/tag/v0.4.0) |
-| 2026-10-27 | [**yii3-idempotency** v2.3.0](https://github.com/rasuvaeff/yii3-idempotency/releases/tag/v2.3.0) |
+| 2026-11-01 | [**json-ld** v0.2.0](https://github.com/rasuvaeff/json-ld/releases/tag/v0.2.0) |
+| 2026-11-01 | [**pinned-http-client** v0.2.0](https://github.com/rasuvaeff/pinned-http-client/releases/tag/v0.2.0) |
+| 2026-11-01 | [**link-preview** v0.1.2](https://github.com/rasuvaeff/link-preview/releases/tag/v0.1.2) |
+| 2026-11-01 | [**schema** v0.5.0](https://github.com/rasuvaeff/schema/releases/tag/v0.5.0) |
+| 2026-10-31 | [**yii3-telemetry-otel** v1.3.0](https://github.com/rasuvaeff/yii3-telemetry-otel/releases/tag/v1.3.0) |
 <!-- releases:end -->
 
 ---
