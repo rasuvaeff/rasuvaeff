@@ -123,11 +123,11 @@ Five that show the range:
 <!-- releases:start -->
 | Date | Release |
 |---|---|
-| 2026-11-01 | [**json-ld** v0.2.0](https://github.com/rasuvaeff/json-ld/releases/tag/v0.2.0) |
-| 2026-11-01 | [**pinned-http-client** v0.2.0](https://github.com/rasuvaeff/pinned-http-client/releases/tag/v0.2.0) |
-| 2026-11-01 | [**link-preview** v0.1.2](https://github.com/rasuvaeff/link-preview/releases/tag/v0.1.2) |
-| 2026-11-01 | [**schema** v0.5.0](https://github.com/rasuvaeff/schema/releases/tag/v0.5.0) |
-| 2026-10-31 | [**yii3-telemetry-otel** v1.3.0](https://github.com/rasuvaeff/yii3-telemetry-otel/releases/tag/v1.3.0) |
+| 2026-11-01 | [**yii3-telemetry-otel** v1.3.1](https://github.com/rasuvaeff/yii3-telemetry-otel/releases/tag/v1.3.1) |
+| 2026-11-01 | [**schema** v1.0.1](https://github.com/rasuvaeff/schema/releases/tag/v1.0.1) |
+| 2026-11-01 | [**link-preview** v1.0.0](https://github.com/rasuvaeff/link-preview/releases/tag/v1.0.0) |
+| 2026-11-01 | [**pinned-http-client** v1.0.0](https://github.com/rasuvaeff/pinned-http-client/releases/tag/v1.0.0) |
+| 2026-11-01 | [**json-ld** v1.0.0](https://github.com/rasuvaeff/json-ld/releases/tag/v1.0.0) |
 <!-- releases:end -->
 
 ---
