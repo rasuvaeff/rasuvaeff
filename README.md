@@ -123,11 +123,11 @@ Five that show the range:
 <!-- releases:start -->
 | Date | Release |
 |---|---|
+| 2026-11-04 | [**schema** v1.1.0](https://github.com/rasuvaeff/schema/releases/tag/v1.1.0) |
 | 2026-11-04 | [**property-testing-openapi** v0.19.2](https://github.com/rasuvaeff/property-testing-openapi/releases/tag/v0.19.2) |
 | 2026-11-03 | [**openapi-contract** v0.16.2](https://github.com/rasuvaeff/openapi-contract/releases/tag/v0.16.2) |
 | 2026-11-03 | [**property-testing-core** v1.3.0](https://github.com/rasuvaeff/property-testing-core/releases/tag/v1.3.0) |
 | 2026-11-01 | [**yii3-telemetry-otel** v1.3.1](https://github.com/rasuvaeff/yii3-telemetry-otel/releases/tag/v1.3.1) |
-| 2026-11-01 | [**schema** v1.0.1](https://github.com/rasuvaeff/schema/releases/tag/v1.0.1) |
 <!-- releases:end -->
 
 ---
