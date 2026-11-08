@@ -26,7 +26,7 @@ Backend engineer with 15+ years of commercial PHP. I design and build high-load 
 
 ### 🔭 What I'm building
 
-- **[cska.in](https://cska.in)** — a CSKA fan community site, rebuilt on the same domain from a 20-year-old legacy database (Yii3, PHP 8.5, PostgreSQL / Redis, Temporal, real-time via Centrifugo; running on 31 of my own packages). Match calendar with live score updates across three sports, a long-running archive of player and head-to-head statistics, Instagram-like stories, a guestbook and private messages updating in realtime, a Telegram bot and mini-app — and an MCP door where a fan's personal agent reads and writes through the same handlers as the site, guarded by per-key scopes, quotas and an audit log.
+- **[cska.in](https://cska.in)** — a CSKA fan community site, rebuilt on the same domain from a 20-year-old legacy database (Yii3, PHP 8.5, PostgreSQL / Redis, Temporal, real-time via Centrifugo; running on 31 of my own packages). Match calendar with live score updates across three sports, a long-running archive of player and head-to-head statistics, Instagram-like stories, a guestbook and private messages updating in realtime, a Telegram bot and mini-app — and an MCP door where a fan's personal agent reads and writes through the same handlers as the site, guarded by per-key scopes, quotas and an audit log. [Full write-up on how it's built inside →](https://teletype.in/@rasuvaeff/cskain) (in Russian)
 - [**ecosystem-sandbox**](https://github.com/rasuvaeff/ecosystem-sandbox) — a runnable Yii3 shop that composes 60+ of my packages into one checkout and payment flow: outbox, idempotency, retries, circuit breaker, webhooks and telemetry working together, not just in isolation.
 - **A fitness / training platform backend** (Yii3, PHP 8.5, PostgreSQL) — activity tracking with `.fit` file parsing, duels and leagues, JWT auth, S3 storage, real-time via Centrifugo, transactional outbox for event delivery. Strict Clean Architecture layering enforced by Deptrac; built on my own packages.
 
@@ -142,7 +142,7 @@ Five that show the range:
 
 ### 🤖 Workflow — LLM-driven, human-gated
 
-The honest answer to "how does one person [publish this many packages](https://packagist.org/packages/rasuvaeff/)?" is that the agent does the mechanical work inside a rulebook a human wrote — and that rulebook is [**php-package-toolkit**](https://github.com/rasuvaeff/php-package-toolkit), open source, so the claim is auditable rather than asserted.
+The honest answer to "how does one person [publish this many packages](https://packagist.org/packages/rasuvaeff/)?" is that the agent does the mechanical work inside a rulebook a human wrote — and that rulebook is [**php-package-toolkit**](https://github.com/rasuvaeff/php-package-toolkit), open source, so the claim is auditable rather than asserted. The same workflow built a whole production site: [how cska.in is put together, with real code from the project](https://teletype.in/@rasuvaeff/cskain) (in Russian).
 
 **The loop**
 
