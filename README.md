@@ -24,6 +24,14 @@ Backend engineer with 15+ years of commercial PHP. I design and build high-load 
 
 ---
 
+### 🔭 What I'm building
+
+- **[cska.in](https://cska.in)** — a CSKA fan community site, rebuilt on the same domain from a 20-year-old legacy database (Yii3, PHP 8.5, PostgreSQL / Redis, Temporal, real-time via Centrifugo; running on 31 of my own packages). Match calendar with live score updates across three sports, a long-running archive of player and head-to-head statistics, Instagram-like stories, a guestbook and private messages updating in realtime, a Telegram bot and mini-app — and an MCP door where a fan's personal agent reads and writes through the same handlers as the site, guarded by per-key scopes, quotas and an audit log.
+- [**ecosystem-sandbox**](https://github.com/rasuvaeff/ecosystem-sandbox) — a runnable Yii3 shop that composes 60+ of my packages into one checkout and payment flow: outbox, idempotency, retries, circuit breaker, webhooks and telemetry working together, not just in isolation.
+- **A fitness / training platform backend** (Yii3, PHP 8.5, PostgreSQL) — activity tracking with `.fit` file parsing, duels and leagues, JWT auth, S3 storage, real-time via Centrifugo, transactional outbox for event delivery. Strict Clean Architecture layering enforced by Deptrac; built on my own packages.
+
+---
+
 ### ⚡ Tech Stack
 
 **Languages**
@@ -143,14 +151,6 @@ The honest answer to "how does one person [publish this many packages](https://p
 3. **Human owns the judgment.** I design the API, decide the abstractions and layer boundaries, review every change, and own release decisions. The agent never merges, tags, or publishes on its own — those are explicit human gates encoded in the skill workflows that drive each step.
 
 What the agent makes cheap is execution, not judgment. Deciding what the right abstraction for a deadline-propagating context or a deterministic A/B engine looks like is the part I bring; the toolkit makes shipping it a matter of hours instead of weeks, without lowering the bar.
-
----
-
-### 🔭 What I'm building
-
-- **A sports fan site** — [cska.in](https://cska.in) (Yii3, PHP 8.5, PostgreSQL / Redis, Temporal, real-time via Centrifugo; built on my own packages) — match calendar with live updates, a long-running archive of player and head-to-head statistics, fan profiles, guestbook and private messages, admin panel.
-- [**ecosystem-sandbox**](https://github.com/rasuvaeff/ecosystem-sandbox) — a runnable Yii3 shop that composes 60+ of my packages into one checkout and payment flow: outbox, idempotency, retries, circuit breaker, webhooks and telemetry working together, not just in isolation.
-- **A fitness / training platform backend** (Yii3, PHP 8.5, PostgreSQL) — activity tracking with `.fit` file parsing, duels and leagues, JWT auth, S3 storage, real-time via Centrifugo, transactional outbox for event delivery. Strict Clean Architecture layering enforced by Deptrac; built on my own packages.
 
 ---
 
