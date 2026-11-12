@@ -131,11 +131,11 @@ Five that show the range:
 <!-- releases:start -->
 | Date | Release |
 |---|---|
+| 2026-11-12 | [**media-converter** v1.2.0](https://github.com/rasuvaeff/media-converter/releases/tag/v1.2.0) |
 | 2026-11-11 | [**yii3-mcp-audit-log-bridge** v2.3.0](https://github.com/rasuvaeff/yii3-mcp-audit-log-bridge/releases/tag/v2.3.0) |
 | 2026-11-11 | [**yii3-mcp-telemetry-bridge** v1.5.0](https://github.com/rasuvaeff/yii3-mcp-telemetry-bridge/releases/tag/v1.5.0) |
 | 2026-11-11 | [**yii3-mcp-rbac-bridge** v1.4.0](https://github.com/rasuvaeff/yii3-mcp-rbac-bridge/releases/tag/v1.4.0) |
 | 2026-11-11 | [**yii3-mcp** v5.0.0](https://github.com/rasuvaeff/yii3-mcp/releases/tag/v5.0.0) |
-| 2026-11-06 | [**schema** v1.1.2](https://github.com/rasuvaeff/schema/releases/tag/v1.1.2) |
 <!-- releases:end -->
 
 ---
