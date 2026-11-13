@@ -131,11 +131,11 @@ Five that show the range:
 <!-- releases:start -->
 | Date | Release |
 |---|---|
-| 2026-11-12 | [**media-converter** v1.2.0](https://github.com/rasuvaeff/media-converter/releases/tag/v1.2.0) |
-| 2026-11-11 | [**yii3-mcp-audit-log-bridge** v2.3.0](https://github.com/rasuvaeff/yii3-mcp-audit-log-bridge/releases/tag/v2.3.0) |
-| 2026-11-11 | [**yii3-mcp-telemetry-bridge** v1.5.0](https://github.com/rasuvaeff/yii3-mcp-telemetry-bridge/releases/tag/v1.5.0) |
-| 2026-11-11 | [**yii3-mcp-rbac-bridge** v1.4.0](https://github.com/rasuvaeff/yii3-mcp-rbac-bridge/releases/tag/v1.4.0) |
-| 2026-11-11 | [**yii3-mcp** v5.0.0](https://github.com/rasuvaeff/yii3-mcp/releases/tag/v5.0.0) |
+| 2026-11-13 | [**link-preview** v1.1.0](https://github.com/rasuvaeff/link-preview/releases/tag/v1.1.0) |
+| 2026-11-13 | [**openapi-contract** v0.17.0](https://github.com/rasuvaeff/openapi-contract/releases/tag/v0.17.0) |
+| 2026-11-13 | [**circuit-breaker** v1.4.0](https://github.com/rasuvaeff/circuit-breaker/releases/tag/v1.4.0) |
+| 2026-11-13 | [**retry** v1.7.0](https://github.com/rasuvaeff/retry/releases/tag/v1.7.0) |
+| 2026-11-13 | [**yii3-maintenance-mode** v1.2.0](https://github.com/rasuvaeff/yii3-maintenance-mode/releases/tag/v1.2.0) |
 <!-- releases:end -->
 
 ---
