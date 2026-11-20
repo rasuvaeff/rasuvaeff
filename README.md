@@ -131,11 +131,11 @@ Five that show the range:
 <!-- releases:start -->
 | Date | Release |
 |---|---|
+| 2026-11-20 | [**yii3-settings-db** v2.2.0](https://github.com/rasuvaeff/yii3-settings-db/releases/tag/v2.2.0) |
+| 2026-11-20 | [**pinned-http-client** v1.1.0](https://github.com/rasuvaeff/pinned-http-client/releases/tag/v1.1.0) |
+| 2026-11-20 | [**duration** v1.2.0](https://github.com/rasuvaeff/duration/releases/tag/v1.2.0) |
+| 2026-11-19 | [**yii3-filestorage-attachments** v0.2.1](https://github.com/rasuvaeff/yii3-filestorage-attachments/releases/tag/v0.2.1) |
 | 2026-11-13 | [**link-preview** v1.1.0](https://github.com/rasuvaeff/link-preview/releases/tag/v1.1.0) |
-| 2026-11-13 | [**openapi-contract** v0.17.0](https://github.com/rasuvaeff/openapi-contract/releases/tag/v0.17.0) |
-| 2026-11-13 | [**circuit-breaker** v1.4.0](https://github.com/rasuvaeff/circuit-breaker/releases/tag/v1.4.0) |
-| 2026-11-13 | [**retry** v1.7.0](https://github.com/rasuvaeff/retry/releases/tag/v1.7.0) |
-| 2026-11-13 | [**yii3-maintenance-mode** v1.2.0](https://github.com/rasuvaeff/yii3-maintenance-mode/releases/tag/v1.2.0) |
 <!-- releases:end -->
 
 ---
