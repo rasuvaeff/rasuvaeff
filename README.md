@@ -15,7 +15,7 @@
 
 ### 👨‍💻 About
 
-Backend engineer with 15+ years of commercial PHP. I design and build high-load services and APIs — and I publish the reusable parts as open source: <!-- packages:count -->89<!-- /packages:count --> packages on Packagist so far.
+Backend engineer with 15+ years of commercial PHP. I design and build high-load services and APIs — and I publish the reusable parts as open source: <!-- packages:count -->90<!-- /packages:count --> packages on Packagist so far.
 
 - **10 years in ad-tech**: advertising networks with RTB (Real-Time Bidding) integrations, buying and selling traffic — MySQL for operational data, ClickHouse for impression analytics, Redis/Memcached for caching.
 - **Now**: product development on Yii3 / PHP 8.5 with Clean Architecture (Domain / Application / Infrastructure / Endpoint, boundaries enforced statically by Deptrac), plus support and refactoring of large Yii2 legacy systems.
@@ -83,7 +83,7 @@ Backend engineer with 15+ years of commercial PHP. I design and build high-load 
 
 ### 📦 Open Source — [packages on Packagist](https://packagist.org/packages/rasuvaeff/)
 
-**<!-- packages:count -->89<!-- /packages:count --> packages** — reusable PHP 8.3+ libraries with hardened CI/CD, SemVer, backward-compatibility checks, and tests on [Testo](https://php-testo.github.io) with mutation testing (MSI 85–100%).
+**<!-- packages:count -->90<!-- /packages:count --> packages** — reusable PHP 8.3+ libraries with hardened CI/CD, SemVer, backward-compatibility checks, and tests on [Testo](https://php-testo.github.io) with mutation testing (MSI 85–100%).
 
 How one person ships this many: see [Workflow](#-workflow--llm-driven-human-gated) below.
 
@@ -131,11 +131,11 @@ Five that show the range:
 <!-- releases:start -->
 | Date | Release |
 |---|---|
-| 2026-11-20 | [**yii3-settings-db** v2.2.0](https://github.com/rasuvaeff/yii3-settings-db/releases/tag/v2.2.0) |
-| 2026-11-20 | [**pinned-http-client** v1.1.0](https://github.com/rasuvaeff/pinned-http-client/releases/tag/v1.1.0) |
-| 2026-11-20 | [**duration** v1.2.0](https://github.com/rasuvaeff/duration/releases/tag/v1.2.0) |
-| 2026-11-19 | [**yii3-filestorage-attachments** v0.2.1](https://github.com/rasuvaeff/yii3-filestorage-attachments/releases/tag/v0.2.1) |
-| 2026-11-13 | [**link-preview** v1.1.0](https://github.com/rasuvaeff/link-preview/releases/tag/v1.1.0) |
+| 2026-11-21 | [**property-testing-openapi** v0.22.0](https://github.com/rasuvaeff/property-testing-openapi/releases/tag/v0.22.0) |
+| 2026-11-21 | [**openapi-contract** v0.18.0](https://github.com/rasuvaeff/openapi-contract/releases/tag/v0.18.0) |
+| 2026-11-21 | [**context-db** v0.3.0](https://github.com/rasuvaeff/context-db/releases/tag/v0.3.0) |
+| 2026-11-21 | [**understudy** v1.2.1](https://github.com/rasuvaeff/understudy/releases/tag/v1.2.1) |
+| 2026-11-21 | [**understudy-phpstan** v1.2.0](https://github.com/rasuvaeff/understudy-phpstan/releases/tag/v1.2.0) |
 <!-- releases:end -->
 
 ---
