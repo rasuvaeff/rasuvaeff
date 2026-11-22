@@ -131,11 +131,11 @@ Five that show the range:
 <!-- releases:start -->
 | Date | Release |
 |---|---|
+| 2026-11-22 | [**yii3-outbox-webhooks-bridge** v1.2.1](https://github.com/rasuvaeff/yii3-outbox-webhooks-bridge/releases/tag/v1.2.1) |
 | 2026-11-22 | [**yii3-audit-log** v1.2.1](https://github.com/rasuvaeff/yii3-audit-log/releases/tag/v1.2.1) |
 | 2026-11-22 | [**property-testing-openapi** v0.22.1](https://github.com/rasuvaeff/property-testing-openapi/releases/tag/v0.22.1) |
 | 2026-11-22 | [**yii3-webhooks** v2.0.2](https://github.com/rasuvaeff/yii3-webhooks/releases/tag/v2.0.2) |
 | 2026-11-22 | [**yii3-mcp-rbac-bridge** v1.4.1](https://github.com/rasuvaeff/yii3-mcp-rbac-bridge/releases/tag/v1.4.1) |
-| 2026-11-22 | [**yii3-idempotency-redis** v1.0.1](https://github.com/rasuvaeff/yii3-idempotency-redis/releases/tag/v1.0.1) |
 <!-- releases:end -->
 
 ---
