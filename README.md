@@ -131,11 +131,11 @@ Five that show the range:
 <!-- releases:start -->
 | Date | Release |
 |---|---|
-| 2026-11-21 | [**property-testing-openapi** v0.22.0](https://github.com/rasuvaeff/property-testing-openapi/releases/tag/v0.22.0) |
-| 2026-11-21 | [**openapi-contract** v0.18.0](https://github.com/rasuvaeff/openapi-contract/releases/tag/v0.18.0) |
-| 2026-11-21 | [**context-db** v0.3.0](https://github.com/rasuvaeff/context-db/releases/tag/v0.3.0) |
-| 2026-11-21 | [**understudy** v1.2.1](https://github.com/rasuvaeff/understudy/releases/tag/v1.2.1) |
-| 2026-11-21 | [**understudy-phpstan** v1.2.0](https://github.com/rasuvaeff/understudy-phpstan/releases/tag/v1.2.0) |
+| 2026-11-22 | [**payments** v0.2.1](https://github.com/rasuvaeff/payments/releases/tag/v0.2.1) |
+| 2026-11-22 | [**openapi-contract** v0.18.1](https://github.com/rasuvaeff/openapi-contract/releases/tag/v0.18.1) |
+| 2026-11-22 | [**mutation-history** v0.1.1](https://github.com/rasuvaeff/mutation-history/releases/tag/v0.1.1) |
+| 2026-11-22 | [**json-ld** v1.0.1](https://github.com/rasuvaeff/json-ld/releases/tag/v1.0.1) |
+| 2026-11-22 | [**retry** v1.7.2](https://github.com/rasuvaeff/retry/releases/tag/v1.7.2) |
 <!-- releases:end -->
 
 ---
