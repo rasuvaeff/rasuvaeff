@@ -131,11 +131,11 @@ Five that show the range:
 <!-- releases:start -->
 | Date | Release |
 |---|---|
+| 2026-11-23 | [**yii3-filestorage** v0.8.0](https://github.com/rasuvaeff/yii3-filestorage/releases/tag/v0.8.0) |
+| 2026-11-23 | [**yii3-correlation-id** v2.1.0](https://github.com/rasuvaeff/yii3-correlation-id/releases/tag/v2.1.0) |
+| 2026-11-23 | [**yii3-ab-testing** v2.2.0](https://github.com/rasuvaeff/yii3-ab-testing/releases/tag/v2.2.0) |
+| 2026-11-22 | [**yii3-mcp-audit-log-bridge** v2.3.1](https://github.com/rasuvaeff/yii3-mcp-audit-log-bridge/releases/tag/v2.3.1) |
 | 2026-11-22 | [**yii3-outbox-webhooks-bridge** v1.2.1](https://github.com/rasuvaeff/yii3-outbox-webhooks-bridge/releases/tag/v1.2.1) |
-| 2026-11-22 | [**yii3-audit-log** v1.2.1](https://github.com/rasuvaeff/yii3-audit-log/releases/tag/v1.2.1) |
-| 2026-11-22 | [**property-testing-openapi** v0.22.1](https://github.com/rasuvaeff/property-testing-openapi/releases/tag/v0.22.1) |
-| 2026-11-22 | [**yii3-webhooks** v2.0.2](https://github.com/rasuvaeff/yii3-webhooks/releases/tag/v2.0.2) |
-| 2026-11-22 | [**yii3-mcp-rbac-bridge** v1.4.1](https://github.com/rasuvaeff/yii3-mcp-rbac-bridge/releases/tag/v1.4.1) |
 <!-- releases:end -->
 
 ---
