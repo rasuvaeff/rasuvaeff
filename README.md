@@ -15,7 +15,7 @@
 
 ### 👨‍💻 About
 
-Backend engineer with 15+ years of commercial PHP. I design and build high-load services and APIs — and I publish the reusable parts as open source: <!-- packages:count -->90<!-- /packages:count --> packages on Packagist so far.
+Backend engineer with 15+ years of commercial PHP. I design and build high-load services and APIs — and I publish the reusable parts as open source: <!-- packages:count -->92<!-- /packages:count --> packages on Packagist so far.
 
 - **10 years in ad-tech**: advertising networks with RTB (Real-Time Bidding) integrations, buying and selling traffic — MySQL for operational data, ClickHouse for impression analytics, Redis/Memcached for caching.
 - **Now**: product development on Yii3 / PHP 8.5 with Clean Architecture (Domain / Application / Infrastructure / Endpoint, boundaries enforced statically by Deptrac), plus support and refactoring of large Yii2 legacy systems.
@@ -83,7 +83,7 @@ Backend engineer with 15+ years of commercial PHP. I design and build high-load 
 
 ### 📦 Open Source — [packages on Packagist](https://packagist.org/packages/rasuvaeff/)
 
-**<!-- packages:count -->90<!-- /packages:count --> packages** — reusable PHP 8.3+ libraries with hardened CI/CD, SemVer, backward-compatibility checks, and tests on [Testo](https://php-testo.github.io) with mutation testing (MSI 85–100%).
+**<!-- packages:count -->92<!-- /packages:count --> packages** — reusable PHP 8.3+ libraries with hardened CI/CD, SemVer, backward-compatibility checks, and tests on [Testo](https://php-testo.github.io) with mutation testing (MSI 85–100%).
 
 How one person ships this many: see [Workflow](#-workflow--llm-driven-human-gated) below.
 
@@ -131,11 +131,11 @@ Five that show the range:
 <!-- releases:start -->
 | Date | Release |
 |---|---|
-| 2026-11-23 | [**yii3-filestorage** v0.8.0](https://github.com/rasuvaeff/yii3-filestorage/releases/tag/v0.8.0) |
-| 2026-11-23 | [**yii3-correlation-id** v2.1.0](https://github.com/rasuvaeff/yii3-correlation-id/releases/tag/v2.1.0) |
-| 2026-11-23 | [**yii3-ab-testing** v2.2.0](https://github.com/rasuvaeff/yii3-ab-testing/releases/tag/v2.2.0) |
-| 2026-11-22 | [**yii3-mcp-audit-log-bridge** v2.3.1](https://github.com/rasuvaeff/yii3-mcp-audit-log-bridge/releases/tag/v2.3.1) |
-| 2026-11-22 | [**yii3-outbox-webhooks-bridge** v1.2.1](https://github.com/rasuvaeff/yii3-outbox-webhooks-bridge/releases/tag/v1.2.1) |
+| 2026-11-24 | [**yii3-filestorage-images** v0.6.0](https://github.com/rasuvaeff/yii3-filestorage-images/releases/tag/v0.6.0) |
+| 2026-11-24 | [**yii3-filestorage-flysystem** v0.2.0](https://github.com/rasuvaeff/yii3-filestorage-flysystem/releases/tag/v0.2.0) |
+| 2026-11-24 | [**property-testing-openapi** v0.23.0](https://github.com/rasuvaeff/property-testing-openapi/releases/tag/v0.23.0) |
+| 2026-11-23 | [**mcp-openapi** v0.1.0](https://github.com/rasuvaeff/mcp-openapi/releases/tag/v0.1.0) |
+| 2026-11-23 | [**mcp** v0.1.0](https://github.com/rasuvaeff/mcp/releases/tag/v0.1.0) |
 <!-- releases:end -->
 
 ---
