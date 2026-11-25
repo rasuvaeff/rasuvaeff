@@ -131,11 +131,11 @@ Five that show the range:
 <!-- releases:start -->
 | Date | Release |
 |---|---|
-| 2026-11-24 | [**yii3-filestorage-images** v0.6.0](https://github.com/rasuvaeff/yii3-filestorage-images/releases/tag/v0.6.0) |
-| 2026-11-24 | [**yii3-filestorage-flysystem** v0.2.0](https://github.com/rasuvaeff/yii3-filestorage-flysystem/releases/tag/v0.2.0) |
-| 2026-11-24 | [**property-testing-openapi** v0.23.0](https://github.com/rasuvaeff/property-testing-openapi/releases/tag/v0.23.0) |
-| 2026-11-23 | [**mcp-openapi** v0.1.0](https://github.com/rasuvaeff/mcp-openapi/releases/tag/v0.1.0) |
-| 2026-11-23 | [**mcp** v0.1.0](https://github.com/rasuvaeff/mcp/releases/tag/v0.1.0) |
+| 2026-11-24 | [**mcp** v0.1.1](https://github.com/rasuvaeff/mcp/releases/tag/v0.1.1) |
+| 2026-11-24 | [**yii3-mcp** v6.1.0](https://github.com/rasuvaeff/yii3-mcp/releases/tag/v6.1.0) |
+| 2026-11-24 | [**mcp-openapi** v0.1.2](https://github.com/rasuvaeff/mcp-openapi/releases/tag/v0.1.2) |
+| 2026-11-24 | [**yii3-mcp-telemetry-bridge** v2.0.0](https://github.com/rasuvaeff/yii3-mcp-telemetry-bridge/releases/tag/v2.0.0) |
+| 2026-11-24 | [**yii3-mcp-audit-log-bridge** v3.0.0](https://github.com/rasuvaeff/yii3-mcp-audit-log-bridge/releases/tag/v3.0.0) |
 <!-- releases:end -->
 
 ---
