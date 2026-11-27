@@ -15,7 +15,7 @@
 
 ### 👨‍💻 About
 
-Backend engineer with 15+ years of commercial PHP. I design and build high-load services and APIs — and I publish the reusable parts as open source: <!-- packages:count -->92<!-- /packages:count --> packages on Packagist so far.
+Backend engineer with 15+ years of commercial PHP. I design and build high-load services and APIs — and I publish the reusable parts as open source: <!-- packages:count -->94<!-- /packages:count --> packages on Packagist so far.
 
 - **10 years in ad-tech**: advertising networks with RTB (Real-Time Bidding) integrations, buying and selling traffic — MySQL for operational data, ClickHouse for impression analytics, Redis/Memcached for caching.
 - **Now**: product development on Yii3 / PHP 8.5 with Clean Architecture (Domain / Application / Infrastructure / Endpoint, boundaries enforced statically by Deptrac), plus support and refactoring of large Yii2 legacy systems.
@@ -83,7 +83,7 @@ Backend engineer with 15+ years of commercial PHP. I design and build high-load 
 
 ### 📦 Open Source — [packages on Packagist](https://packagist.org/packages/rasuvaeff/)
 
-**<!-- packages:count -->92<!-- /packages:count --> packages** — reusable PHP 8.3+ libraries with hardened CI/CD, SemVer, backward-compatibility checks, and tests on [Testo](https://php-testo.github.io) with mutation testing (MSI 85–100%).
+**<!-- packages:count -->94<!-- /packages:count --> packages** — reusable PHP 8.3+ libraries with hardened CI/CD, SemVer, backward-compatibility checks, and tests on [Testo](https://php-testo.github.io) with mutation testing (MSI 85–100%).
 
 How one person ships this many: see [Workflow](#-workflow--llm-driven-human-gated) below.
 
@@ -131,11 +131,11 @@ Five that show the range:
 <!-- releases:start -->
 | Date | Release |
 |---|---|
+| 2026-11-26 | [**mcp** v0.1.5](https://github.com/rasuvaeff/mcp/releases/tag/v0.1.5) |
+| 2026-11-26 | [**laravel-mcp** v0.1.0](https://github.com/rasuvaeff/laravel-mcp/releases/tag/v0.1.0) |
+| 2026-11-26 | [**symfony-mcp** v0.1.0](https://github.com/rasuvaeff/symfony-mcp/releases/tag/v0.1.0) |
+| 2026-11-26 | [**context-db** v0.4.0](https://github.com/rasuvaeff/context-db/releases/tag/v0.4.0) |
 | 2026-11-26 | [**yii3-maintenance-mode** v1.3.0](https://github.com/rasuvaeff/yii3-maintenance-mode/releases/tag/v1.3.0) |
-| 2026-11-25 | [**pinned-http-client** v1.2.0](https://github.com/rasuvaeff/pinned-http-client/releases/tag/v1.2.0) |
-| 2026-11-25 | [**yii3-idempotency-db** v3.1.1](https://github.com/rasuvaeff/yii3-idempotency-db/releases/tag/v3.1.1) |
-| 2026-11-25 | [**yii3-ab-testing-web** v2.1.2](https://github.com/rasuvaeff/yii3-ab-testing-web/releases/tag/v2.1.2) |
-| 2026-11-25 | [**yii3-feature-flags** v1.2.0](https://github.com/rasuvaeff/yii3-feature-flags/releases/tag/v1.2.0) |
 <!-- releases:end -->
 
 ---
