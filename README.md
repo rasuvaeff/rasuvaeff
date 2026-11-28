@@ -131,11 +131,11 @@ Five that show the range:
 <!-- releases:start -->
 | Date | Release |
 |---|---|
-| 2026-11-26 | [**mcp** v0.1.5](https://github.com/rasuvaeff/mcp/releases/tag/v0.1.5) |
-| 2026-11-26 | [**laravel-mcp** v0.1.0](https://github.com/rasuvaeff/laravel-mcp/releases/tag/v0.1.0) |
-| 2026-11-26 | [**symfony-mcp** v0.1.0](https://github.com/rasuvaeff/symfony-mcp/releases/tag/v0.1.0) |
-| 2026-11-26 | [**context-db** v0.4.0](https://github.com/rasuvaeff/context-db/releases/tag/v0.4.0) |
-| 2026-11-26 | [**yii3-maintenance-mode** v1.3.0](https://github.com/rasuvaeff/yii3-maintenance-mode/releases/tag/v1.3.0) |
+| 2026-11-28 | [**yii3-filestorage-attachments** v0.6.0](https://github.com/rasuvaeff/yii3-filestorage-attachments/releases/tag/v0.6.0) |
+| 2026-11-28 | [**yii3-filestorage-images** v0.9.0](https://github.com/rasuvaeff/yii3-filestorage-images/releases/tag/v0.9.0) |
+| 2026-11-28 | [**yii3-filestorage-db** v0.4.0](https://github.com/rasuvaeff/yii3-filestorage-db/releases/tag/v0.4.0) |
+| 2026-11-28 | [**yii3-filestorage-flysystem** v0.5.0](https://github.com/rasuvaeff/yii3-filestorage-flysystem/releases/tag/v0.5.0) |
+| 2026-11-28 | [**yii3-filestorage-web** v0.7.0](https://github.com/rasuvaeff/yii3-filestorage-web/releases/tag/v0.7.0) |
 <!-- releases:end -->
 
 ---
